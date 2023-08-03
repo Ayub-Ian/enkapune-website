@@ -6,22 +6,54 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary: #F36523;
+  --secondary: #FBD1BD;
+  --border: #EBB9A1;
+  --angelic: #FFFCFB;
+  --dark: #240F05;
+}
+html, body { 
+  --scroll-behavior: smooth!important;
+  scroll-behavior: smooth!important
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--angelic);
+  background: #2C2421;
+  font-family: var(--font-poppins);
+  font-size: 15px;
+}
+
+
+.monty {
+  font-family: var(--font-montserrat);
+}
+
+
+.fs-1{ font-size: calc(20px + 3.5vw);}
+.fs-2{ font-size: calc(18px + 1.6vw);}
+.fs-3{ font-size: calc(16px + 0.45vw);}
+.fs-4{ font-size: 15px;}
+.fs-5{ font-size: 14px;}
+.fs-6{ font-size: 13px;}
+.fs-7{ font-size: 12px;}
+.fs-8{ font-size: 11px;}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--angelic);
+  border: 1px solid;
+  border-color: var(--primary);
+}
+
+.btn-secondary {
+  border: 1px solid;
+  border-color: var(--border);
+}
+
+.field {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
