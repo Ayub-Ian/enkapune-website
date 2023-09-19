@@ -24,8 +24,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${poppins.variable}`}>
-      <body suppressHydrationWarning={true} className='px-4 lg:px-[60px]'>
+    <html lang="en" >
+      <body suppressHydrationWarning={true}>
         <Navbar />
         {children}</body>
     </html>

@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -78,47 +79,48 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="backdrop-blur-lg bg-transparent fixed w-full z-20 top-0 left-0 px-4 lg:px-[60px]">
+    <nav className="backdrop-blur-lg bg-[#2C2421] fixed w-full z-20 top-0 left-0 px-4 lg:px-[60px] group ">
       <MobileNav open={open} setOpen={setOpen} />
       <div className="flex items-center justify-between pt-4 pb-2 border-b border-[#453E3B] ">
         <Link className="text-2xl font-semibold" href="/">
-          <Image src="/img/enkapune.svg" height={120} width={120} alt="enkapune logo" />
+          <Image src="/img/enkapune.svg" height={120} width={120} alt="enkapune logo" className="h-auto w-auto" />
         </Link>
 
 
           <div
-            className="z-50 flex relative w-7 h-5 flex-col justify-between items-center md:hidden"
+            className="z-50 flex relative w-7 h-5 flex-col justify-between items-center md:hidden "
             onClick={() => {
               setOpen(!open);
             }}
           >
             {/* hamburger button */}
             <span
-              className={`h-0.5 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
-                open ? "rotate-45 translate-y-[9px]" : ""
+              className={`h-0.5 w-full bg-[#F36523] rounded-lg transform transition duration-300 ease-in-out ${
+                open ? "rotate-45 translate-y-[9px] bg-white" : ""
               }`}
             />
             <span
-              className={`h-0.5 w-full bg-white rounded-lg transition-all transform  duration-300 ease-in-out ${
-                open ? "-translate-x-full opacity-0" : ""
+              className={`h-0.5 w-full bg-[#F36523] rounded-lg transition-all transform  duration-300 ease-in-out ${
+                open ? "-translate-x-full opacity-0 bg-white" : ""
               }`}
             />
             <span
-              className={`h-0.5 w-full bg-white rounded-lg transform transition duration-300 ease-in-out ${
-                open ? "-rotate-45 -translate-y-[9px]" : ""
+              className={`h-0.5 w-full bg-[#F36523] rounded-lg transform transition duration-300 ease-in-out ${
+                open ? "-rotate-45 -translate-y-[9px] bg-white" : ""
               }`}
             />
           </div>
 
-          <div className="hidden md:flex">
-            <NavLink to="/contact">HOME</NavLink>
-            <NavLink to="/contact">SERVICES</NavLink>
-            <NavLink to="/about">ABOUT</NavLink>
-            <NavLink to="/about">GALLERY</NavLink>
+          <div className="hidden md:flex monty font-medium">
+            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/">SERVICES</NavLink>
+            <NavLink to="/">ABOUT</NavLink>
+            <NavLink to="/gallery">GALLERY</NavLink>
           </div>
           <div className="hidden md:flex">
-            <div className="px-4 py-2 border border-[#EBB9A1]">
-                <Link className="uppercase" href="#contact">Contact us</Link>
+            <div className=" group/item px-3 py-2 border border-[#F36523] flex items-center gap-2 rounded-lg transition-all duration-300 ease-in-out hover:bg-[#F36523]">
+                <Link className="uppercase text-white hover:transition-all hover:duration-300 hover:ease-in-out monty text-sm" href="#contact">Contact us</Link>
+                <ArrowSmallRightIcon className="w-5 h-5 text-[#F36523] group/iocn transition-transform group-hover/item:translate-x-1 group-hover/item:text-white hover:transition-all hover:duration-300 hover:ease-in-out" />
             </div>
           </div>
       </div>
