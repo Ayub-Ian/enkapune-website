@@ -10,7 +10,11 @@ export async function getRooms() {
             starting,
             "heroImg": hero.asset->url,
             "altImg": hero.alt
-        }`
+        }`,{}, {
+          next: {
+            revalidate: 60,
+          }
+        }
   );
 }
 

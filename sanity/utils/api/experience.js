@@ -9,7 +9,11 @@ export async function getExperiences() {
             "slug": slug.current,
             description,
             ref
-        }`
+        }`,{}, {
+            next: {
+                revalidate: 60
+            }
+        }
     )
 
 }

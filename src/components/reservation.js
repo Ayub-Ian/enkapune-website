@@ -47,6 +47,8 @@ function ReservationForm({ slug, homeNavigate }) {
     }
   };
 
+  console.log({error})
+
 
   return (
     <div className="hidden relative md:block rounded-lg bg-black/10 backdrop-blur backdrop-filter p-4 mb-8 ">

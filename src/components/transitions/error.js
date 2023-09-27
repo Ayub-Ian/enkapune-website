@@ -16,7 +16,7 @@ function Error({ error, setError }) {
           leaveTo="transform opacity-0 scale-95"
         >
           <div className="flex justify-center items-center flex-col mx-auto space-y-2 h-full  inset-0 absolute  text-white bg-red-600 rounded-lg bg-opacity-90">
-            <p className="mt-10 text-xl text-center monty font-bold">
+            <p className="mt-10 text-xl monty font-bold ">
               We apologize for the inconvenience, something went wrong.
             </p>
             <p className="text-lg">Please try again in a few minutes.</p>

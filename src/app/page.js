@@ -193,6 +193,7 @@ export default async function Home() {
                   </div>
                 </li>
               ))}
+              
               <li className="bg-black/10 backdrop-blur overflow-hidden rounded-xl flex flex-col px-5 py-10 gap-3 mb-5 md:mb-0 ">
                 <p className="mb-3 fs-4 text-[#636774] font-extrabold uppercase monty">
                   Camping
