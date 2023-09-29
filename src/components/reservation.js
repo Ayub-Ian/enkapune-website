@@ -38,6 +38,7 @@ function ReservationForm({ slug, homeNavigate }) {
       if (!((res.status >= 200) & (res.status <= 299))) {
         setError(true);
         setSubmitting(false);
+        console.log({res})
         return;
       }
       setSubmitting(false);

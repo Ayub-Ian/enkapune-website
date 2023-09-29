@@ -17,6 +17,6 @@ export const frontGallery = [
     },
     {
         title: "front gallery",
-        src: "/img/homepage-gallery/DSC_9214.jpg"
+        src: "/img/homepage-gallery/DSC_9213.jpg"
     }
 ]

@@ -39,6 +39,8 @@ export default async function Home() {
   const experiences = await getExperiences();
   const rooms = await getRooms();
 
+
+
   return (
     <main className="flex min-h-screen flex-col pt-16">
       <div className="mt-4">
