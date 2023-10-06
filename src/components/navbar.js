@@ -28,7 +28,7 @@ function MobileNav({ open, setOpen }) {
       <div className="flex flex-col ml-4 mt-6a">
       <Link
           className=" uppercase font-medium my-4"
-          href="/home"
+          href="/"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
@@ -39,7 +39,7 @@ function MobileNav({ open, setOpen }) {
         </Link>
       <Link
           className=" uppercase font-medium my-4"
-          href="/about"
+          href="/"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
@@ -50,7 +50,7 @@ function MobileNav({ open, setOpen }) {
         </Link>
         <Link
           className=" uppercase font-medium my-4"
-          href="/about"
+          href="/"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
@@ -61,14 +61,14 @@ function MobileNav({ open, setOpen }) {
         </Link>
         <Link
           className="uppercase font-medium my-4"
-          href="/contact"
+          href="/gallery"
           onClick={() =>
             setTimeout(() => {
               setOpen(!open);
             }, 100)
           }
         >
-          Contact
+          Gallery
         </Link>
       </div>
     </div>
